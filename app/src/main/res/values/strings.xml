@@ -14,4 +14,6 @@
     <string name="calories_by_food">Calories By Food</string>
     <string name="search_items">Search Items</string>
     <string name="search">search</string>
+    <string name="heading">heading</string>
+    <string name="summary">summary</string>
 </resources>
