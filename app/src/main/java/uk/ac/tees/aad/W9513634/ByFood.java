@@ -58,8 +58,8 @@ public class ByFood extends AppCompatActivity {
         this.images = new String[0];
         this.id = new int[0];
 
-        field = findViewById(R.id.editText2);
-        search = findViewById(R.id.search);
+        field = findViewById(R.id.serachItem);
+        search = findViewById(R.id.search_btn);
         search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
