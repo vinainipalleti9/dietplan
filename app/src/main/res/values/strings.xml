@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">dietplan</string>
+    <string name="todo">TODO</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create Account</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="calories_by_exercise">Calories By Exercise</string>
+    <string name="find_the_trainer">Find The Trainer</string>
+    <string name="find_the_gym">Find the Gym</string>
+    <string name="calories_by_food">Calories By Food</string>
+    <string name="search_items">Search Items</string>
+    <string name="search">search</string>
 </resources>

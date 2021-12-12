@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "264646847820",
+    "project_id": "dietplan-17753",
+    "storage_bucket": "dietplan-17753.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264646847820:android:bcc840b4b4d024d22573e9",
+        "android_client_info": {
+          "package_name": "uk.ac.tees.aad.W9513634"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264646847820-uhkpau2o65kt76hbsnu1ojc1hfdqctta.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg1cI-TMUDIJgh8gK5hOudjFcH3Np383s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "264646847820-uhkpau2o65kt76hbsnu1ojc1hfdqctta.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
