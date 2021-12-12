@@ -136,6 +136,12 @@ public class ByFood extends AppCompatActivity {
         queue.add(stringRequest);
 
     }
+
+    @Override
+    public void onBackPressed() {
+        finish();
+        super.onBackPressed();
+    }
 }
 
 

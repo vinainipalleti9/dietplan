@@ -19,17 +19,17 @@ import org.json.JSONObject;
 
 public class FoodItem extends AppCompatActivity {
 
-    TextView heading;
-    TextView summary;
-    ImageView img;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_food_item);
 
-        this.heading = findViewById(R.id.heading_final);
-        this.summary = findViewById(R.id.summery_final);
-        this.img = findViewById(R.id.head_image);
+        TextView heading = findViewById(R.id.heading_final);
+        TextView summary = findViewById(R.id.summery_final);
+        ImageView img = findViewById(R.id.head_image);
+
 
         int id = getIntent().getIntExtra("id",0);
         RequestQueue queue = Volley.newRequestQueue(this);
@@ -61,4 +61,6 @@ public class FoodItem extends AppCompatActivity {
         });
         queue.add(stringRequest);
     }
+
+
 }
