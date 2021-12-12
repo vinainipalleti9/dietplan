@@ -6,4 +6,105 @@
     android:layout_height="match_parent"
     tools:context=".FindTrainer">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/rrr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/consult_a_trainer"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/submit_trainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+    <Button
+        android:id="@+id/submit_trainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        android:text="@string/submit_request"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/select_main_purpose"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintEnd_toEndOf="@+id/spinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spinner" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/select_diet_reason"
+        app:layout_constraintBottom_toTopOf="@+id/spinner2"
+        app:layout_constraintEnd_toEndOf="@+id/spinner2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spinner2" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/select_type_of_workout"
+        app:layout_constraintBottom_toTopOf="@+id/spinner3"
+        app:layout_constraintEnd_toEndOf="@+id/spinner3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spinner3" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
