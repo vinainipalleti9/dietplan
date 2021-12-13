@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -57,6 +58,14 @@ public class ByExercise extends AppCompatActivity {
     FirebaseUser firebaseUser;
 
     ArrayList<Exercises> exercises;
+
+    @Override
+    public void onBackPressed() {
+        finish();
+        startActivity(new Intent(getApplicationContext(),Dashboard.class));
+    }
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -184,6 +193,7 @@ public class ByExercise extends AppCompatActivity {
             public void onCancelled(DatabaseError error) {
             }
         });
+
 
     }
 }

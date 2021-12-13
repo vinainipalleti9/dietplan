@@ -43,7 +43,7 @@ public class Register extends AppCompatActivity  {
 
 
         email = findViewById(R.id.signupEmail);
-        password = findViewById(R.id.signupMobile);
+        password = findViewById(R.id.signupPassword);
         name = findViewById(R.id.signupName);
         mobile = findViewById(R.id.signupMobile);
         create_account  = findViewById(R.id.create_acc);
@@ -66,6 +66,14 @@ public class Register extends AppCompatActivity  {
 
 
     }
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if(FirebaseAuth.getInstance().getCurrentUser() != null)
+        {
+            startActivity(new Intent(getApplicationContext(),Dashboard.class));
+        }
+    }
 
     public void validateAndLogin()
     {
@@ -75,7 +83,7 @@ public class Register extends AppCompatActivity  {
         }
         if(password.getText().toString().length()<6)
         {
-            password.setError("Password Shoud be more than 6 letters");
+            password.setError("Password Should be more than 6 letters");
         }
         if(name.getText().toString().length()<5)
         {
@@ -84,7 +92,6 @@ public class Register extends AppCompatActivity  {
         if(mobile.getText().toString().length()<10){
             mobile.setError("Enter Correct Mobile Number");
         }
-
         firebaseAuth.createUserWithEmailAndPassword(email.getText().toString(), password.getText().toString())
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override

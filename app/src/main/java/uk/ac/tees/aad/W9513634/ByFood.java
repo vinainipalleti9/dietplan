@@ -43,6 +43,8 @@ public class ByFood extends AppCompatActivity {
     EditText field;
     MyAdapter adapter;
 
+
+
     @Override
     public boolean isDeviceProtectedStorage() {
         return super.isDeviceProtectedStorage();
@@ -89,6 +91,7 @@ public class ByFood extends AppCompatActivity {
             }
         });
     }
+
 
 
     public void makeReqest(String value)
@@ -140,7 +143,7 @@ public class ByFood extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         finish();
-        super.onBackPressed();
+        startActivity(new Intent(getApplicationContext(),Dashboard.class));
     }
 }
 

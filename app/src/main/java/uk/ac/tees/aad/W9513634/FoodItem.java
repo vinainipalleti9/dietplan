@@ -2,6 +2,7 @@ package uk.ac.tees.aad.W9513634;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -62,5 +63,9 @@ public class FoodItem extends AppCompatActivity {
         queue.add(stringRequest);
     }
 
-
+    @Override
+    public void onBackPressed() {
+        finish();
+        startActivity(new Intent(getApplicationContext(),Dashboard.class));
+    }
 }

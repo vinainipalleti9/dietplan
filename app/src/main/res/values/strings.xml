@@ -23,4 +23,5 @@
     <string name="select_diet_reason">Select Diet Reason</string>
     <string name="select_type_of_workout">Select Type of workout</string>
     <string name="message">message</string>
+    <string name="title_activity_gyms">Map</string>
 </resources>
